@@ -136,33 +136,28 @@ color:#E2E8F0;
 
 
 .hero h1{
-
     font-size:55px;
-    color:white;
-
+    color:#0F172A;   /* Dark Navy */
+    font-weight:700;
 }
-.hero h1 span{
+.hero{
 
 background:
-
 linear-gradient(
-90deg,
-#06B6D4,
-#8B5CF6
+135deg,
+#F8FAFC 0%,
+#EEF4FF 50%,
+#F5F3FF 100%
 );
-
--webkit-background-clip:text;
-
-color:transparent;
 
 }
 
 
 .hero h2{
-
     font-size:28px;
     margin:15px 0;
-
+    color:#334155;
+    font-weight:600;
 }
 
 
@@ -177,13 +172,9 @@ color:transparent;
 
 
 .hero p{
-
-    margin:20px 0;
+    color:#475569;
     line-height:1.8;
-    color:#4B5563;
-
 }
-
 
 
 
