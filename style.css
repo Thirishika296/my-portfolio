@@ -362,18 +362,23 @@ border:
 
 
 
+/* Contact Center Alignment */
 
+.contact-card{
 
-
-
-/* Contact */
-
-
-#contact .card{
-
-    margin:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
     text-align:center;
-    max-width:600px;
+
+}
+
+
+.contact-card p{
+
+    text-align:center;
+    width:100%;
 
 }
 
@@ -1378,6 +1383,24 @@ right:10px;
 
 bottom:20px;
 
+
+}
+/* Contact Glass Card Center */
+
+.contact-card{
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    border-radius:25px;
+    padding:40px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    margin:auto;
 
 }
 
