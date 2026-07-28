@@ -112,9 +112,7 @@ nav ul li a:hover{
 
 /* Hero Section */
 
-
 .hero{
-
     min-height:100vh;
     display:flex;
     justify-content:space-around;
@@ -122,6 +120,16 @@ nav ul li a:hover{
     padding:120px 8% 50px;
     gap:40px;
 
+    background:
+    radial-gradient(circle at top left,
+    rgba(139,92,246,.10),
+    transparent 40%),
+
+    radial-gradient(circle at bottom right,
+    rgba(6,182,212,.08),
+    transparent 40%),
+
+    #F8FAFC;
 }
 
 
@@ -133,11 +141,9 @@ nav ul li a:hover{
 
 }
 
-
 .hero h1{
-
-color:white;
-
+    color:#0F172A;
+    opacity:1;
 }
 
 .hero h1 span{
@@ -156,33 +162,19 @@ color:transparent;
 
 }
 
-
 .hero h2{
-
-    font-size:28px;
-    margin:15px 0;
-
+    color:#475569;
+    opacity:1;
 }
-
 
 
 .hero h3{
-
     color:#2563EB;
-    font-size:24px;
 
 }
-
-
-
 .hero p{
-
-    margin:20px 0;
-    line-height:1.8;
-    color:#4B5563;
-
+    color:#334155;
 }
-
 
 
 
@@ -478,86 +470,30 @@ color:#D1D5DB;
 /* Responsive Design */
 
 
-@media(max-width:900px){
-
-
-nav{
-
-flex-direction:column;
-gap:20px;
-
-}
-
-
-nav ul{
-
-flex-wrap:wrap;
-justify-content:center;
-
-}
-
-
-
-.hero{
-
-flex-direction:column;
-text-align:center;
-
-}
-
-
-
-.hero h1{
-
-font-size:40px;
-
-}
-
-
-
-.profile img{
-
-width:250px;
-height:250px;
-
-}
-
-
-
-.buttons{
-
-justify-content:center;
-
-}
-
-
-}
-
-
-
 @media(max-width:500px){
 
+    nav ul{
+        gap:12px;
+        font-size:13px;
+    }
 
-nav ul{
+    .title{
+        font-size:30px;
+    }
 
-gap:12px;
-font-size:13px;
+    .card{
+        width:100%;
+    }
 
+}   
+
+.menu-toggle{
+    display:none;
 }
 
+@media screen and (max-width:768px){
 
-.title{
-
-font-size:30px;
-
-}
-
-
-
-.card{
-
-width:100%;
-
+   ...
 }
 /* ===========================
    HAMBURGER MENU
