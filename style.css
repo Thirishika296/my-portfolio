@@ -50,13 +50,50 @@ padding:14px 28px;border:none;border-radius:40px;
 background:linear-gradient(90deg,#8B5CF6,#06B6D4);
 color:#fff;cursor:pointer;transition:.3s}
 button:hover{transform:translateY(-5px);box-shadow:0 0 25px rgba(6,182,212,.5)}
+/* ==========================
+   PROFILE IMAGE
+========================== */
+
+.profile{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
 .profile img{
-width:320px;height:320px;border-radius:50%;object-fit:cover;
-border:8px solid rgba(255,255,255,.2);
-box-shadow:0 0 40px rgba(6,182,212,.5),0 0 80px rgba(139,92,246,.3)}
-section{padding:90px 8%}
-.title{text-align:center;font-size:42px;margin-bottom:50px;color:#fff}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+
+    border:8px solid rgba(255,255,255,.2);
+
+    box-shadow:
+    0 0 40px rgba(6,182,212,.5),
+    0 0 80px rgba(139,92,246,.3);
+
+    animation:float 3s ease-in-out infinite;
+}
+
+/* Glow behind image */
+
+.profile::before{
+    content:"";
+    position:absolute;
+    width:360px;
+    height:360px;
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+    rgba(6,182,212,.35),
+    rgba(139,92,246,.20),
+    transparent 70%);
+
+    filter:blur(40px);
+    z-index:-1;
+}
 .card{
 background:rgba(255,255,255,.08);
 backdrop-filter:blur(20px);
