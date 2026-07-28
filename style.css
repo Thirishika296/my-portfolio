@@ -5,8 +5,6 @@
     box-sizing:border-box;
     scroll-behavior:smooth;
 }
-
-
 body{
 
 font-family:'Inter',sans-serif;
@@ -33,7 +31,7 @@ header{
     top:0;
     width:100%;
     z-index:1000;
-background:rgba(15,23,42,0.75);
+    background:rgba(15,23,42,0.75);
 
 backdrop-filter:blur(20px);
 
@@ -52,7 +50,6 @@ nav{
 
 }
 
-
 .logo{
 
 background:
@@ -66,7 +63,6 @@ linear-gradient(
 -webkit-background-clip:text;
 
 color:transparent;
-
 
 }
 
@@ -91,10 +87,9 @@ nav ul li a{
 
 }
 
+nav ul li a{
 
-nav ul li a:hover{
-
-    color:#2563EB;
+color:#E2E8F0;
 
 }
 
@@ -143,13 +138,10 @@ nav ul li a:hover{
 .hero h1{
 
     font-size:55px;
-    color;white
+    color:white;
 
 }
-
-
 .hero h1 span{
-
 
 background:
 
@@ -163,9 +155,7 @@ linear-gradient(
 
 color:transparent;
 
-
 }
-
 
 
 .hero h2{
@@ -243,7 +233,7 @@ button:hover{
     border-radius:50%;
     object-fit:cover;
     border:8px solid white;
-    box-shadow:0 0 40px rgba(6,182,212,0.5);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
     animation:float 3s infinite ease-in-out;
 
 }
@@ -302,9 +292,7 @@ section p{
 }
 
 
-
 .card{
-
 
 background:
 
@@ -315,7 +303,6 @@ backdrop-filter:blur(20px);
 border:
 
 1px solid rgba(255,255,255,0.15);
-
 
 }
 
@@ -362,23 +349,18 @@ border:
 
 
 
-/* Contact Center Alignment */
 
-.contact-card{
 
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+
+
+/* Contact */
+
+
+#contact .card{
+
+    margin:auto;
     text-align:center;
-
-}
-
-
-.contact-card p{
-
-    text-align:center;
-    width:100%;
+    max-width:600px;
 
 }
 
@@ -388,12 +370,12 @@ border:
 /* Footer */
 
 
+footer{
 
-    footer{
-
-background:#020617;
-
-color:#CBD5E1;
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
 
 }
 
@@ -544,6 +526,22 @@ height:250px;
 .buttons{
 
 justify-content:center;
+
+
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+
+    background:linear-gradient(
+        90deg,
+        #8B5CF6,
+        #06B6D4
+    );
+
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.4s;
 
 }
 
@@ -1385,24 +1383,6 @@ bottom:20px;
 
 
 }
-/* Contact Glass Card Center */
-
-.contact-card{
-
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(20px);
-    border-radius:25px;
-    padding:40px;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-
-    margin:auto;
-
-}
 
 
-} 
+} intha code la clr la chnage panu then font uh professional ah enga change pananum nu code kudu
