@@ -1,28 +1,17 @@
-/* =====================================
-   NAVY + PURPLE + CYAN
-   GLASSMORPHISM PORTFOLIO
-===================================== */
-
-
+/* Google Font */
 *{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 
 body{
 
-font-family:'Poppins',sans-serif;
+font-family:'Inter',sans-serif;
 
 background:
-
-radial-gradient(circle at top left,
-rgba(139,92,246,.25),
-transparent 35%),
 
 linear-gradient(
 135deg,
@@ -33,60 +22,38 @@ linear-gradient(
 
 color:#E2E8F0;
 
-overflow-x:hidden;
-
 }
 
 
-
-/* =====================
- NAVBAR
-===================== */
-
+/* Navbar */
 
 header{
 
-position:fixed;
-
-top:0;
-
-width:100%;
-
-z-index:1000;
-
-background:
-
-rgba(15,23,42,.65);
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+background:rgba(15,23,42,0.75);
 
 backdrop-filter:blur(20px);
 
-border-bottom:
-
-1px solid rgba(255,255,255,.1);
+box-shadow:
+0 5px 25px rgba(6,182,212,0.15);
 
 }
-
 
 
 nav{
 
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
 
 }
 
 
-
 .logo{
-
-font-size:30px;
-
-font-weight:700;
 
 background:
 
@@ -99,6 +66,7 @@ linear-gradient(
 -webkit-background-clip:text;
 
 color:transparent;
+
 
 }
 
@@ -106,11 +74,9 @@ color:transparent;
 
 nav ul{
 
-display:flex;
-
-gap:25px;
-
-list-style:none;
+    display:flex;
+    gap:25px;
+    list-style:none;
 
 }
 
@@ -118,21 +84,17 @@ list-style:none;
 
 nav ul li a{
 
-text-decoration:none;
-
-color:#E2E8F0;
-
-font-weight:500;
-
-transition:.3s;
+    text-decoration:none;
+    color:#111827;
+    font-weight:500;
+    transition:0.3s;
 
 }
 
 
-
 nav ul li a:hover{
 
-color:#22D3EE;
+    color:#2563EB;
 
 }
 
@@ -140,52 +102,30 @@ color:#22D3EE;
 
 #darkBtn{
 
-background:
-
-linear-gradient(
-135deg,
-#8B5CF6,
-#06B6D4
-);
-
-border:none;
-
-color:white;
-
-padding:10px 15px;
-
-border-radius:50%;
-
-cursor:pointer;
+    border:none;
+    background:#2563EB;
+    color:white;
+    padding:10px 15px;
+    border-radius:50%;
+    cursor:pointer;
 
 }
 
 
 
-/* =====================
- HERO
-===================== */
+
+
+/* Hero Section */
 
 
 .hero{
 
-min-height:100vh;
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-around;
-
-padding:120px 8% 50px;
-
-background:
-
-radial-gradient(
-circle at center,
-rgba(6,182,212,.15),
-transparent 40%
-);
+    min-height:100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:120px 8% 50px;
+    gap:40px;
 
 }
 
@@ -193,9 +133,8 @@ transparent 40%
 
 .hero-content{
 
-max-width:600px;
-
-animation:slideLeft 1s ease;
+    max-width:600px;
+    animation:slideLeft 1s ease;
 
 }
 
@@ -203,13 +142,14 @@ animation:slideLeft 1s ease;
 
 .hero h1{
 
-font-size:55px;
+    font-size:55px;
+    color;white
 
 }
 
 
-
 .hero h1 span{
+
 
 background:
 
@@ -222,6 +162,7 @@ linear-gradient(
 -webkit-background-clip:text;
 
 color:transparent;
+
 
 }
 
@@ -229,9 +170,8 @@ color:transparent;
 
 .hero h2{
 
-font-size:28px;
-
-margin:15px 0;
+    font-size:28px;
+    margin:15px 0;
 
 }
 
@@ -239,7 +179,8 @@ margin:15px 0;
 
 .hero h3{
 
-color:#22D3EE;
+    color:#2563EB;
+    font-size:24px;
 
 }
 
@@ -247,40 +188,35 @@ color:#22D3EE;
 
 .hero p{
 
-color:#CBD5E1;
-
-line-height:1.8;
-
-margin:20px 0;
+    margin:20px 0;
+    line-height:1.8;
+    color:#4B5563;
 
 }
 
 
 
-/* BUTTON */
+
+.buttons{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+
+}
+
 
 
 button{
 
-padding:12px 25px;
-
-border:none;
-
-border-radius:30px;
-
-background:
-
-linear-gradient(
-90deg,
-#8B5CF6,
-#06B6D4
-);
-
-color:white;
-
-cursor:pointer;
-
-transition:.4s;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#2563EB;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.4s;
 
 }
 
@@ -288,91 +224,42 @@ transition:.4s;
 
 button:hover{
 
-transform:translateY(-5px);
-
-box-shadow:
-
-0 15px 30px rgba(6,182,212,.4);
+    transform:translateY(-5px);
+    background:#3B82F6;
+    box-shadow:0 10px 25px rgba(37,99,235,0.3);
 
 }
 
 
 
-/* =====================
- PROFILE
-===================== */
 
-
-.profile{
-
-position:relative;
-
-}
-
-
-
-.profile::before{
-
-content:"";
-
-position:absolute;
-
-width:330px;
-
-height:330px;
-
-background:
-
-linear-gradient(
-45deg,
-#8B5CF6,
-#06B6D4
-);
-
-border-radius:50%;
-
-filter:blur(50px);
-
-opacity:.7;
-
-z-index:-1;
-
-}
-
+/* Profile Image */
 
 
 .profile img{
 
-width:320px;
-
-height:320px;
-
-object-fit:cover;
-
-border-radius:50%;
-
-border:
-
-8px solid rgba(255,255,255,.2);
-
-box-shadow:
-
-0 0 50px rgba(6,182,212,.5);
-
-animation:float 3s infinite;
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid white;
+    box-shadow:0 0 40px rgba(6,182,212,0.5);
+    animation:float 3s infinite ease-in-out;
 
 }
 
 
 
-/* =====================
- SECTIONS
-===================== */
+
+
+
+
+/* Sections */
 
 
 section{
 
-padding:90px 8%;
+    padding:90px 8%;
 
 }
 
@@ -380,54 +267,37 @@ padding:90px 8%;
 
 .title{
 
-text-align:center;
-
-font-size:38px;
-
-margin-bottom:40px;
-
-background:
-
-linear-gradient(
-90deg,
-#06B6D4,
-#8B5CF6
-);
-
--webkit-background-clip:text;
-
-color:transparent;
+    text-align:center;
+    font-size:38px;
+    color:#2563EB;
+    margin-bottom:40px;
 
 }
+
+
 
 
 
 section p{
 
-color:#CBD5E1;
-
-line-height:1.8;
+    line-height:1.8;
+    color:#374151;
+    font-size:16px;
 
 }
 
 
 
 
-
-/* =====================
- GLASS CARDS
-===================== */
+/* Cards */
 
 
 .cards{
 
-display:flex;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-gap:30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
 
 }
 
@@ -435,27 +305,394 @@ gap:30px;
 
 .card{
 
-width:280px;
-
-padding:30px;
-
-border-radius:25px;
 
 background:
 
-rgba(255,255,255,.08);
+rgba(255,255,255,0.08);
 
 backdrop-filter:blur(20px);
 
 border:
 
-1px solid rgba(255,255,255,.15);
+1px solid rgba(255,255,255,0.15);
 
-box-shadow:
 
-0 20px 40px rgba(0,0,0,.3);
+}
 
-transition:.4s;
+
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 20px 40px rgba(37,99,235,0.2);
+
+}
+
+
+
+.card h2,
+.card h3{
+
+    color:#2563EB;
+    margin-bottom:15px;
+
+}
+
+
+.card p{
+
+    color:#4B5563;
+
+}
+
+
+
+
+/* Education */
+
+
+#education .card{
+
+    margin:auto;
+    text-align:center;
+
+}
+
+
+
+
+
+
+
+/* Contact */
+
+
+#contact .card{
+
+    margin:auto;
+    text-align:center;
+    max-width:600px;
+
+}
+
+
+
+
+/* Footer */
+
+
+
+    footer{
+
+background:#020617;
+
+color:#CBD5E1;
+
+}
+
+
+
+
+
+
+/* Animation */
+
+
+@keyframes slideLeft{
+
+from{
+
+opacity:0;
+transform:translateX(-50px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateX(0);
+
+}
+
+}
+
+
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+
+
+
+
+
+/* Dark Mode */
+
+
+.dark{
+
+background:#111827;
+color:white;
+
+}
+
+
+.dark header{
+
+background:#1F2937;
+
+}
+
+
+.dark nav ul li a{
+
+color:white;
+
+}
+
+
+.dark .card{
+
+background:#1F2937;
+color:white;
+
+}
+
+
+.dark p{
+
+color:#D1D5DB;
+
+}
+
+
+
+
+
+
+
+
+/* Responsive Design */
+
+
+@media(max-width:900px){
+
+
+nav{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+
+nav ul{
+
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+
+
+.hero{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+
+.profile img{
+
+width:250px;
+height:250px;
+
+}
+
+
+
+.buttons{
+
+justify-content:center;
+
+}
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+nav ul{
+
+gap:12px;
+font-size:13px;
+
+}
+
+
+.title{
+
+font-size:30px;
+
+}
+
+
+
+.card{
+
+width:100%;
+
+}
+/* ===========================
+   HAMBURGER MENU
+=========================== */
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#2563EB;
+}
+
+/* Mobile */
+@media screen and (max-width:768px){
+
+    nav{
+        position:relative;
+        padding:15px 20px;
+    }
+
+    .menu-toggle{
+        display:block;
+        position:absolute;
+        right:20px;
+        top:20px;
+    }
+
+    #darkBtn{
+        position:absolute;
+        right:70px;
+        top:18px;
+    }
+
+    nav ul{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:white;
+        margin-top:20px;
+        padding:20px 0;
+        border-radius:10px;
+        box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    nav ul.show{
+        display:flex;
+    }
+
+    nav ul li{
+        text-align:center;
+        margin:10px 0;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:150px 20px 50px;
+    }
+
+    .profile img{
+        width:220px;
+        height:220px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .buttons button{
+        width:100%;
+    }
+
+    .card{
+        width:100%;
+    }
+
+}
+
+
+}
+/* =====================================
+   PART 2 PREMIUM PORTFOLIO DESIGN
+===================================== */
+
+
+/* 🌈 Gradient Hero Background */
+
+.hero{
+
+background:
+
+radial-gradient(circle at top left,
+rgba(37,99,235,0.15),
+transparent 40%),
+
+linear-gradient(
+135deg,
+#f8fafc,
+#eef2ff
+);
+
+border-radius:0 0 50px 50px;
+
+}
+
+
+
+/* 💎 Full Glassmorphism Cards */
+
+
+.card{
+
+background:
+
+rgba(255,255,255,0.65);
+
+backdrop-filter:blur(20px);
+
+-webkit-backdrop-filter:blur(20px);
+
+border:
+
+1px solid rgba(255,255,255,0.4);
 
 }
 
@@ -468,32 +705,13 @@ transform:
 translateY(-15px)
 scale(1.03);
 
-border-color:#06B6D4;
-
-box-shadow:
-
-0 20px 50px rgba(6,182,212,.3);
-
-}
-
-
-
-.card h2,
-.card h3{
-
-color:#22D3EE;
-
-margin-bottom:15px;
-
 }
 
 
 
 
 
-/* =====================
- STATISTICS
-===================== */
+/* 📊 Statistics Section */
 
 
 .stats{
@@ -506,29 +724,52 @@ gap:25px;
 
 flex-wrap:wrap;
 
+margin-top:40px;
+
 }
 
 
 
 .stat-box{
 
+
 background:
 
-rgba(255,255,255,.08);
+rgba(255,255,255,0.7);
 
-backdrop-filter:blur(20px);
+
+backdrop-filter:blur(15px);
+
 
 padding:25px;
 
-width:170px;
+
+width:180px;
+
 
 text-align:center;
 
+
 border-radius:25px;
 
-border:
 
-1px solid rgba(255,255,255,.15);
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.1);
+
+
+transition:.4s;
+
+
+}
+
+
+
+.stat-box:hover{
+
+
+transform:translateY(-10px);
+
 
 }
 
@@ -536,96 +777,313 @@ border:
 
 .stat-box h2{
 
+
 font-size:40px;
 
-color:#22D3EE;
+
+color:#2563EB;
+
 
 }
 
 
 
-/* =====================
- PROJECT IMAGE
-===================== */
+.stat-box p{
 
 
-.project-card img,
+font-weight:600;
+
+
+}
+
+
+
+
+
+/* 📸 Premium Profile Glow */
+
+
+.profile{
+
+position:relative;
+
+}
+
+
+
+.profile::before{
+
+
+content:"";
+
+
+position:absolute;
+
+
+width:330px;
+
+
+height:330px;
+
+
+background:
+
+linear-gradient(
+45deg,
+#2563EB,
+#9333EA
+);
+
+
+border-radius:50%;
+
+
+filter:blur(50px);
+
+
+opacity:.5;
+
+
+z-index:-1;
+
+
+}
+
+
+
+
+/* 🏆 Certification Cards */
+
+
 .cert-card img{
 
-width:100%;
 
-height:180px;
+width:80px;
 
-object-fit:cover;
 
-border-radius:15px;
+height:80px;
+
+
+object-fit:contain;
+
 
 margin-bottom:20px;
 
-}
-
-
-
-.project-card:hover img{
-
-transform:scale(1.05);
 
 }
 
 
 
+.cert-card:hover{
 
 
-/* =====================
- SCROLL PROGRESS
-===================== */
+box-shadow:
+
+0 20px 50px rgba(37,99,235,.25);
 
 
-#scroll-progress{
+}
 
-position:fixed;
+
+
+
+
+/* 💼 Internship Logo */
+
+
+.company-logo{
+
+
+width:90px;
+
+
+height:90px;
+
+
+object-fit:contain;
+
+
+margin:auto;
+
+
+display:block;
+
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+
+/* 🚀 Project Premium Cards */
+
+
+.project-card{
+
+
+position:relative;
+
+
+overflow:hidden;
+
+
+}
+
+
+
+.project-card::before{
+
+
+content:"";
+
+
+position:absolute;
+
 
 top:0;
 
-left:0;
+
+left:-100%;
+
+
+width:100%;
+
 
 height:5px;
 
-width:0%;
 
 background:
 
 linear-gradient(
 90deg,
-#06B6D4,
-#8B5CF6
+#2563EB,
+#9333EA
 );
 
-z-index:2000;
+
+transition:.5s;
+
+
+}
+
+
+
+.project-card:hover::before{
+
+
+left:0;
+
 
 }
 
 
 
 
-/* =====================
- FLOAT SOCIAL
-===================== */
+
+/* ✨ Cursor Glow Effect */
+
+
+.cursor-glow{
+
+
+position:fixed;
+
+
+width:25px;
+
+
+height:25px;
+
+
+background:#2563EB;
+
+
+border-radius:50%;
+
+
+pointer-events:none;
+
+
+filter:blur(10px);
+
+
+z-index:9999;
+
+
+}
+
+
+
+
+
+/* 📈 Scroll Progress */
+
+
+#scroll-progress{
+
+
+position:fixed;
+
+
+top:0;
+
+
+left:0;
+
+
+height:5px;
+
+
+width:0%;
+
+
+background:
+
+linear-gradient(
+90deg,
+#2563EB,
+#9333EA
+);
+
+
+z-index:3000;
+
+
+}
+
+
+
+
+
+/* 📱 Floating Social Icons */
 
 
 .social-float{
 
+
 position:fixed;
 
-right:20px;
 
-bottom:30px;
+right:25px;
+
+
+bottom:40px;
+
 
 display:flex;
 
+
 flex-direction:column;
 
+
 gap:15px;
+
+
+z-index:1000;
+
 
 }
 
@@ -633,59 +1091,63 @@ gap:15px;
 
 .social-float a{
 
+
 width:50px;
+
 
 height:50px;
 
+
 display:flex;
+
 
 align-items:center;
 
+
 justify-content:center;
 
-border-radius:50%;
 
 background:
 
 linear-gradient(
 135deg,
-#8B5CF6,
-#06B6D4
+#2563EB,
+#9333EA
 );
+
 
 color:white;
 
-text-decoration:none;
-
-font-size:22px;
-
-}
-
-
-
-
-/* =====================
- CURSOR GLOW
-===================== */
-
-
-.cursor-glow{
-
-position:fixed;
-
-width:25px;
-
-height:25px;
-
-background:#06B6D4;
 
 border-radius:50%;
 
-filter:blur(10px);
 
-pointer-events:none;
+font-size:22px;
 
-z-index:9999;
+
+text-decoration:none;
+
+
+box-shadow:
+
+0 10px 25px rgba(37,99,235,.3);
+
+
+transition:.4s;
+
+
+}
+
+
+
+.social-float a:hover{
+
+
+transform:
+
+translateY(-8px)
+rotate(10deg);
+
 
 }
 
@@ -693,38 +1155,105 @@ z-index:9999;
 
 
 
-/* =====================
- ANIMATION
-===================== */
+/* 🔥 Scroll Reveal Animation */
 
 
-@keyframes float{
+.reveal{
 
-50%{
-
-transform:translateY(-15px);
-
-}
-
-}
-
-
-@keyframes slideLeft{
-
-from{
 
 opacity:0;
 
-transform:translateX(-50px);
+
+transform:translateY(50px);
+
+
+transition:1s;
+
 
 }
 
 
-to{
+
+.reveal.active{
+
 
 opacity:1;
 
-transform:translateX(0);
+
+transform:translateY(0);
+
+
+}
+
+
+
+
+
+/* Loading Screen */
+
+
+.loader{
+
+
+position:fixed;
+
+
+width:100%;
+
+
+height:100vh;
+
+
+background:white;
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+z-index:5000;
+
+
+}
+
+
+
+.loader span{
+
+
+width:50px;
+
+
+height:50px;
+
+
+border:5px solid #ddd;
+
+
+border-top-color:#2563EB;
+
+
+border-radius:50%;
+
+
+animation:spin 1s linear infinite;
+
+
+}
+
+
+
+@keyframes spin{
+
+
+100%{
+
+transform:rotate(360deg);
 
 }
 
@@ -732,12 +1261,13 @@ transform:translateX(0);
 
 
 
-/* =====================
- DARK MODE
-===================== */
+
+
+/* 🌙 Better Dark Mode */
 
 
 .dark{
+
 
 background:#020617;
 
@@ -746,120 +1276,110 @@ color:white;
 }
 
 
-.dark .card{
+
+.dark .card,
+.dark .stat-box{
+
 
 background:
 
 rgba(15,23,42,.7);
 
+
+color:white;
+
+
+}
+
+
+
+.dark header{
+
+
+background:
+
+rgba(15,23,42,.8);
+
+
+}
+
+
+
+.dark .hero{
+
+
+background:
+
+linear-gradient(
+135deg,
+#020617,
+#172554
+);
+
+
+}
+
+
+
+.dark .title{
+
+
+color:#60A5FA;
+
+
 }
 
 
 
 
 
-/* =====================
- HAMBURGER
-===================== */
-
-
-.menu-toggle{
-
-display:none;
-
-font-size:30px;
-
-color:#22D3EE;
-
-cursor:pointer;
-
-}
-
-
-
-
-
-/* =====================
- RESPONSIVE
-===================== */
+/* 📱 Mobile Premium Adjustments */
 
 
 @media(max-width:768px){
 
 
-.menu-toggle{
+.stats{
 
-display:block;
+
+gap:15px;
+
 
 }
-
-
-
-nav ul{
-
-display:none;
-
-flex-direction:column;
-
-background:#0f172a;
-
-width:100%;
-
-padding:20px;
-
-}
-
-
-
-nav ul.active{
-
-display:flex;
-
-}
-
-
-
-.hero{
-
-flex-direction:column-reverse;
-
-text-align:center;
-
-}
-
-
-
-.hero h1{
-
-font-size:40px;
-
-}
-
-
-
-.profile img{
-
-width:230px;
-
-height:230px;
-
-}
-
-
-
-.card{
-
-width:100%;
-
-}
-
 
 
 .stat-box{
 
+
 width:140px;
 
+
 }
 
 
+
+.profile::before{
+
+
+width:230px;
+
+
+height:230px;
+
+
 }
+
+
+.social-float{
+
+
+right:10px;
+
+
+bottom:20px;
+
+
+}
+
+
+} 
