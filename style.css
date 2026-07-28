@@ -196,4 +196,92 @@ padding:30px;text-align:center;color:#CBD5E1}
     .buttons button{
         width:100%;
     }
+    @media(max-width:768px){
+
+    nav{
+        position:relative;
+        padding:15px 20px;
+    }
+
+
+    .menu-toggle{
+        display:block;
+        font-size:28px;
+        color:white;
+        cursor:pointer;
+    }
+
+
+    nav ul{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+
+        background:#111827;
+
+        display:none;
+
+        flex-direction:column;
+        align-items:center;
+
+        gap:20px;
+
+        padding:25px 0;
+
+        z-index:1000;
+    }
+
+
+    nav ul li a{
+        font-size:20px;
+        color:white;
+    }
+
+
+    nav ul.active{
+        display:flex;
+    }
+
+
+
+    /* Home section mobile fix */
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding-top:40px;
+    }
+
+
+    .profile img{
+        width:220px;
+        height:220px;
+    }
+
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+
+    .hero-content h2{
+        font-size:28px;
+    }
+
+
+    .hero-content h3{
+        font-size:22px;
+    }
+
+}.menu-toggle span{
+
+display:block;
+width:25px;
+height:3px;
+background:white;
+margin:5px;
+
 }
+}
+
