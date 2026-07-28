@@ -145,92 +145,33 @@ nav ul li a:hover{
 }
 
 .hero h1{
-
-    font-size:70px;
-    font-weight:800;
-    margin-bottom:18px;
-    color:white;
-
-}
-
-.hero h1 span{
-
-    background:linear-gradient(90deg,#06B6D4,#8B5CF6);
-
-    -webkit-background-clip:text;
-
-    color:transparent;
-
+    color:#F8FAFC;
 }
 
 .hero h2{
-
-    font-size:42px;
-
     color:#E2E8F0;
-
-    margin-bottom:20px;
-
 }
 
 .hero h3{
-
     color:#22D3EE;
-
-    font-size:30px;
-
-    margin-bottom:25px;
-
 }
 
 .hero p{
-
     color:#CBD5E1;
-
-    line-height:1.9;
-
-    font-size:18px;
-
-    max-width:650px;
-
 }
 
 /* ===========================
    BUTTONS
 =========================== */
 
-.buttons{
-
-    margin-top:35px;
-
-    display:flex;
-
-    gap:18px;
-
-    flex-wrap:wrap;
-
-}
 
 button{
-
-    padding:15px 30px;
-
-    border:none;
-
-    border-radius:50px;
-
     background:linear-gradient(90deg,#8B5CF6,#06B6D4);
-
     color:white;
+}
 
-    font-size:16px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.4s;
-
+button:hover{
+    box-shadow:0 0 30px rgba(6,182,212,.6);
 }
 
 button:hover{
@@ -256,23 +197,10 @@ button:hover{
 }
 
 .profile img{
-
-    width:360px;
-
-    height:360px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    border:8px solid rgba(255,255,255,.15);
-
+    border:8px solid rgba(255,255,255,.2);
     box-shadow:
-
-    0 0 80px rgba(6,182,212,.45);
-
-    animation:float 4s ease-in-out infinite;
-
+    0 0 40px rgba(6,182,212,.5),
+    0 0 80px rgba(139,92,246,.3);
 }
 
 @keyframes float{
@@ -300,9 +228,26 @@ header{
    ...
 }
 
-/* Hero */
 .hero{
-   ...
+    min-height:100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:120px 8% 50px;
+    gap:40px;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(139,92,246,.20),
+    transparent 35%),
+
+    radial-gradient(circle at bottom right,
+    rgba(6,182,212,.15),
+    transparent 35%),
+
+    linear-gradient(135deg,#0F172A,#1E1B4B,#020617);
+
+    border-radius:0 0 50px 50px;
 }
 
 /* Skills */
