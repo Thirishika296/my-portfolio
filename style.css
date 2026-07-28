@@ -200,64 +200,60 @@ header{
 
 @media (max-width:768px){
 
-    header{
-        height: 90px;
-    }
-
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        padding: 0 20px;
-        height: 90px;
-    }
-
-    .hero{
-        padding: 170px 20px 70px;
-    }
-
-    .menu-toggle{
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-        color: #fff;
-    }
-
-    #nav-links{
-        display: none;
-        position: absolute;
-        top: 90px;
-        left: 0;
-        width: 100%;
-        background: rgba(15,23,42,.98);
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    #nav-links.active{
-        display: flex;
-    }
-}
-   /* ===== Desktop Navbar Fix ===== */
-@media (min-width:769px){
-
     nav{
         display:flex;
         justify-content:space-between;
         align-items:center;
         flex-direction:row;
+        height:80px;
+        padding:0 20px;
     }
 
     #nav-links{
+        display:none;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#0F172A;
+        flex-direction:column;
+        text-align:center;
+        padding:20px 0;
+    }
+
+    #nav-links.show{
+        display:flex;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:120px 20px 60px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .profile img{
+        width:240px;
+        height:240px;
+    }
+}
+   /* ===== Desktop Navbar Fix ===== */
+
+@media (min-width:769px){
+
+    #nav-links{
         display:flex !important;
-        flex-direction:row;
-        gap:30px;
-        list-style:none;
     }
 
     .menu-toggle{
         display:none !important;
     }
+
 }
