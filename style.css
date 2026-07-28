@@ -163,24 +163,73 @@ nav{
     border-radius:30px;
 }
 
+/* ===== HEADER & HERO FIX ===== */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 9999;
+    background: rgba(15,23,42,.95);
+    backdrop-filter: blur(15px);
+}
+
+.hero{
+    min-height: 100vh;
+    padding: 180px 8% 90px;
+}
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== MOBILE FIX ===== */
+
 @media (max-width:768px){
 
-    .menu-toggle{
-        display:block;
-    }
-
-    .nav-right{
-        display:flex;
-        align-items:center;
-        gap:12px;
+    header{
+        height: 90px;
     }
 
     nav{
-        flex-direction:row;
-        justify-content:space-between;
-        height:80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 0 20px;
+        height: 90px;
     }
 
+    .hero{
+        padding: 170px 20px 70px;
+    }
+
+    .menu-toggle{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    #nav-links{
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: rgba(15,23,42,.98);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #nav-links.active{
+        display: flex;
+    }
+}
     #nav-links{
         display:none;
         position:absolute;
